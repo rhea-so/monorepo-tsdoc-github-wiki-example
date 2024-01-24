@@ -20,19 +20,14 @@ jobs:
         with:
           node-version-file: ".nvmrc"
 
-      - name: Cache Dependencies
-        id: cache
-        uses: actions/cache@main
-        with:
-          key: ${{ hashFiles('package-lock.json') }}
-          path: "node_modules"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
 
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build Documentation
-        run: npm run docs
+        run: pnpm run docs
 
       - name: Sync GitHub Wiki
         uses: spenserblack/actions-wiki@main
