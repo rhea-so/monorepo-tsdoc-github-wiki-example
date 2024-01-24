@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@8.12.0",
   "scripts": {
-    "docs": "typedoc"
+    "docs": "typedoc && cp FOOTER.md wiki/_Footer.md"
   },
   "devDependencies": {
     "typedoc": "0.25.7",
