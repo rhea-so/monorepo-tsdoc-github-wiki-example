@@ -1,3 +1,6 @@
 {
-  "name": "@libs/calculator"
+  "name": "@libs/calculator",
+  "dependencies": {
+    "@libs/arithmetic": "*"
+  }
 }

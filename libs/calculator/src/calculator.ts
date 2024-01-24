@@ -39,7 +39,7 @@ export class Calculator {
   /**
    * Adds a number to the calculator.
    * @param x The number to add.
-   * @method add
+   * @method add {@link @libs/arithmetic!Addition~add}
    * @public
    * @example
    * ```typescript
@@ -55,7 +55,7 @@ export class Calculator {
   /**
    * Subtracts a number from the calculator.
    * @param x The number to subtract.
-   * @method sub
+   * @method sub {@link @libs/arithmetic!Subtraction~sub}
    * @public
    * @example
    * ```typescript
@@ -71,7 +71,7 @@ export class Calculator {
   /**
    * Multiplies the calculator by a number.
    * @param x The number to multiply by.
-   * @method mul
+   * @method mul {@link @libs/arithmetic!Multiplication~mul}
    * @public
    * @example
    * ```typescript
@@ -93,7 +93,7 @@ export class Calculator {
   /**
    * Divides the calculator by a number.
    * @param x The number to divide by.
-   * @method div
+   * @method div {@link @libs/arithmetic!Division~div}
    * @public
    * @example
    * ```typescript

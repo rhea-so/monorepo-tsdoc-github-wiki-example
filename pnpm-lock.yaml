@@ -26,7 +26,11 @@ importers:
 
   libs/arithmetic: {}
 
-  libs/calculator: {}
+  libs/calculator:
+    dependencies:
+      '@libs/arithmetic':
+        specifier: '*'
+        version: link:../arithmetic
 
 packages:
 
