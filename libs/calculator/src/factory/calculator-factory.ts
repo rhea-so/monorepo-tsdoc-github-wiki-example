@@ -1,16 +1,9 @@
 import { Calculator } from "../calculator";
 
-/**
- * A factory for creating calculators.
- * @class CalculatorFactory
- */
+/** A factory for creating calculators. */
 export class CalculatorFactory {
   /**
    * Creates a new calculator.
-   * @param value The initial value of the calculator.
-   * @returns A new calculator.
-   * @public
-   * @static
    * @example
    * ```typescript
    * const calc = CalculatorFactory.create();
@@ -22,7 +15,10 @@ export class CalculatorFactory {
    * console.log(calc.value); // 1
    * ```
    */
-  public static create(value: number = 0): Calculator {
+  public static create(
+    /** The initial value of the calculator. */
+    value: number = 0
+  ): Calculator {
     return new Calculator(value);
   }
 }
