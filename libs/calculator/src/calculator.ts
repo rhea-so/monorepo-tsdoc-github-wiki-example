@@ -94,4 +94,25 @@ export class Calculator {
   public div(x: number): void {
     this.value /= x;
   }
+
+  /**
+   * Tests the calculator.
+   * @example
+   * ```typescript
+   * const calc = new Calculator();
+   * calc.test({ value: 1 });
+   * ```
+   */
+  public test(
+    /** The input for the test. */
+    input: TestInput
+  ): void {
+    // Do nothing
+  }
+}
+
+/** The input for {@link Calculator~test}. */
+export interface TestInput {
+  /** The value to test. */
+  value: number;
 }
